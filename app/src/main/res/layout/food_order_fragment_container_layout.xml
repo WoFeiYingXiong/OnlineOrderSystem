@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_foodorderview"
+            android:padding="5dp"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textview_background"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_total_goods"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="菜品总数"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/textview_background"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_total_prices"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="订单总价"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:background="@drawable/textview_background"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_check"
+                android:text="结账"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_background"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:text="提交订单"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_background"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

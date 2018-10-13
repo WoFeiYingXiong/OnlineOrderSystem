@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_or_register_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ProgressBar android:id="@+id/progress"
+        android:max="100"
+        android:progress="0"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView android:id="@+id/image_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText android:id="@+id/etxt_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textColor="#cc7a00"
+        android:layout_marginTop="30dp"
+        android:hint="登录名:"
+        android:background="@drawable/edittext_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="10dp"
+        android:maxLines="1"
+        android:layout_below="@id/image_login"/>
+
+    <EditText android:id="@+id/etxt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textColor="#cc7a00"
+        android:layout_below="@id/etxt_username"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="登录密码:"
+        android:background="@drawable/edittext_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:maxLines="1"/>
+
+    <EditText android:id="@+id/etxt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textColor="#cc7a00"
+        android:layout_below="@id/etxt_password"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="手机号:"
+        android:background="@drawable/edittext_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etxt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button android:id="@+id/btn_Login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:text="登录"
+            android:textSize="30sp"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/etxt_phone"
+            android:background="@drawable/button_background"/>
+
+        <Button android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:text="注册"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/etxt_phone"
+            android:background="@drawable/button_background"/>
+
+        <Button android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:text="返回"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/etxt_phone"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
